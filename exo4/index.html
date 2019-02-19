@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="app"> <!-- ON APPLIQUE ANGULAR SUR LA PAGE -->
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+</head>
+<body ng-controller="myCtrl"> <!-- NG CONTROLLER POUR INDIQUER OU L ON AFFECTE -->
+
+  <p ng-repeat="voiture in voitures | filter : '!verte'"> <!-- pour aller rechercher les infos dans le fichier et de filtrer avec la couleur non verte avec ! -->
+    {{voiture.marque}} - {{voiture.couleur}}</p>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+  </html>

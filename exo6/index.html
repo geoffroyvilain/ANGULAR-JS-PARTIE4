@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 6</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+</head>
+<body ng-app="app">   <!-- ON APPLIQUE ANGULAR SUR LA PAGE -->
+<div ng-controller="myCtrl"> <!-- ON APPLIQUE myCtrl POUR EXECUTER LA FONCTION -->
+  <!-- ng-show FONCTIONNE EN BOLLEAN AVEC TRUE OU FALSE; ON LUI ATTRIBUE LE PARAMETRE First POUR LE DIFFÉRENCIER DU 2ÈME PARAGRAPHE -->
+  <p ng-show="First">Le fait divers, orthographié aussi fait-divers (événements appelés également les chiens écrasés en argot), est, en journalisme, un type d'événement qui n'est classable dans aucune des rubriques qui composent habituellement un média d'actualité (international, national, politique, économie, etc.)1. Par conséquent, les faits divers sont regroupés au sein d'une même rubrique, malgré l'absence de lien qui les unisse2. Il s'agit généralement d'événements tragiques, tels que les crimes, les accidents, les larcins énonçables en trois lignes.</p>
+  <!-- ng click permet d'activer la fonction -->
+  <button ng-click="First=true; Second=false">Afficher 1er texte</button>
+</div>
+<div ng-controller="myCtrl">
+  <p ng-show="Second">Danse avec qui tu voudras : voici la nuit qui suivit cette terrible nuit, mais à bout de bras. Bouleversé, il se plongea dans son ventre. Galopin, vous-même, monseigneur, si vous criez ou si vous voulez y joindre le mépris !
+  </p>
+  <button ng-click="First=false; Second=true">Afficher 2ème texte</button>
+</div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
